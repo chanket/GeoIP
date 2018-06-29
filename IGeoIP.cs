@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Licc.GeoIP
 {
-    public interface IGeoIP
+    public interface IGeoIP : IDisposable
     {
         string Search(IPAddress ip);
 
